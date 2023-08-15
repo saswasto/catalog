@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Glossary</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa07a">
+	<meta name="msapplication-TileColor" content="#ffa07a">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="app">
+	
+	<page-header></page-header>
+	
+	<main>
+		
+		<article>
+			
+			<header>
+
+				<h1>Glossary</h1>
+				
+				<p>As with anything of a technical nature, understanding the <strong>terminology</strong> associated with HTML, CSS, and front-end web development is incredibly helpful.</p>
+
+				<nav class="page-nav">
+					<h2>On This Page</h2>
+					<a href="#general">General Terms</a>
+					<a href="#html">HTML Terms</a>
+					<a href="#css">CSS Terms</a>
+				</nav>
+
+			</header>
+
+			<h2 id="general">General Terms</h2>
+
+			<dl>
+
+				<dt>Breakpoint</dt>
+				<dd>The screen size at which a particular <em>media query</em> becomes active in a <em>responsive design</em>.</dd>
+
+				<dt>Browser</dt>
+				<dd>An application which allows users to fetch and view websites. Behind the scenes, this is achieved by looking up domain names on the DNS system, connecting to a server, downloading requested web content (code files) from the server, and rendering it into a viewable website.</dd>
+                <dd>
+                    <ul>
+                        <li><a href="https://www.google.com/chrome/">Chrome</a></li>
+                        <li><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+                        <li><a href="https://www.apple.com/safari/">Safari</a></li>
+                        <li><a href="https://www.microsoft.com/en-us/edge">Edge</a></li>
+                        <li><a href="https://www.opera.com/">Opera</a></li>
+                    </ul>
+                </dd>
+				<dt><abbr title="Domain Name System">DNS</abbr></dt>
+				<dd>The internet's system for matching a human-readable domain name typed into a browser to the numeric IP Address of a server, where a given website's files are stored.</dd>
+                
+				<dt>Domain Name</dt>
+				<dd>The human-friendly address of a website; the address that is typed into the browser. The browser sends this address to DNS in order to be forwarded to the appropriate server at the IP address associated with the domain name.</dd>
+
+				<dt>Fluid Design</dt>
+				<dd>Web pages and elements of web pages that stretch and squash to fit the available space. Unstyled web pages are fluid by default.</dd>
+
+				<dt>Git</dt>
+				<dd>A popular version control protocol. Allows users to keep track of changes made to code and to return to previous versions if necessary.</dd>
+
+				<dt>Github</dt>
+				<dd>A popular website that offers hosting and management of git repositories.</dd>
+
+				<dt><abbr title="Internet Protocol">IP</abbr></dt>
+				<dd>The address of a computer or server on the internet. A browser must obtain this address from DNS in order to communicate with a server and download site files to display.</dd>
+
+				<dt>Responsive Design</dt>
+				<dd>Web pages that change their layout or other styles based on the media (screen size, orientation, device type) on which it is displayed. Makes use of <em>media queries</em> in CSS to define how and in what context specific CSS should be used.</dd>
+
+				<dt>Semantic Code</dt>
+				<dd>Refers to HTML code which properly utilizes elements according to their meaning. It is code that describes the content rather than using elements simply based on their appearance.</dd>
+
+				<dt>Server</dt>
+				<dd>A specialized computer that stores website files and content and makes them accessible on the internet.</dd>
+
+				<dt>Separation of Concerns</dt>
+				<dd>This is the concept that a webpage's content and style should be kept separate in the code. HTML should determine content, and style / presentation should be left to CSS. This methodology was developed to make sites easier to maintain, re-theme, and parse.</dd>
+
+				<dt>Syntax</dt>
+				<dd>The parts of a code language and their proper order to make a valid statement. Just as in English statements are made of words and symbols which must come in a certain order to convey a particular meaning, so too must statements in code languages be properly constructed to achieve a desired effect.</dd>
+
+				<dt>Viewport</dt>
+				<dd>The visible area of a web page in a browser window. Viewport dimensions vary with different device screen sizes, orientation, and window scaling.</dd>
+
+			</dl>
+
+			<h2 id="html">HTML Terms</h2>
+
+			<dl>
+
+				<dt>Attribute</dt>
+				<dd>Additional information that can be added to some HTML <em>elements</em> to provide additional configuration or behavior in the <em>browser</em>. Attributes are written inside the brackets of an element's <em>tag</em> (or opening tag) and consist of either the attribute name paired with a value or just the attribute name for binary attributes. E.g. <code>&lt;img src="file.jpg"&gt;</code>, where "src" is the name of the attribute and "file.jpg" is it's value.</dd>
+
+				<dt>Browser</dt>
+				<dd>An application / software used for viewing and interacting with websites. Browsers use take a given <em>domain name</em>, reach out to <em>DNS</em> to indicate the <em>IP Address</em> of the associated <em>server</em>, then download the code files for the webpage from the server. Then the files are read to render the webpage as described by the code. Finally, the browser continues watching for user interaction and responds as the code instructs.</dd>
+
+				<dt>Element</dt>
+				<dd>A discrete piece of code in HTML that defines specific content, such as text, media, etcetera. An element typically includes an <em>opening tag</em>, and may include <em>attributes</em>, and a <em>closing tag</em> (if it is not a self-closing element).</dd>
+
+				<dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+				<dd>An abbreviation for <em>HyperText Markup Language</em>. It is the most basic language for websites and defines the meaning and structure of <strong>content</strong> on a web page.</dd>
+
+				<dt>Self-Closing Element</dt>
+				<dd>Any element that does not require a separate closing tag in addition to the opening tag. For example: <code>&lt;img src=""&gt;</code>, which stands alone, as opposed to <code>&lt;strong&gt;text&lt;/strong&gt;</code>, which requires the closing tag after the text.</dd>
+
+				<dt>Server</dt>
+				<dd>A special computer for storing code files and other web content. <em>Browsers</em> must connect to a server and download that content to render a website.</dd>
+
+				<dt>Tag</dt>
+				<dd>The written code associated with an <em>element</em>. Usually consists of the name of the element (or sometime an abbreviation) placed between arrow brackets, e.g. <code>&lt;section&gt;</code></dd>
+
+
+			</dl>
+
+			<h2 id="css">CSS Terms</h2>
+
+			<dl>
+
+				<dt><abbr title="Cascading Style Sheets">CSS</abbr></dt>
+				<dd>A code language for defining the visual and presentational style of a webpage. CSS code looks for matching pieces of HTML and <em>declaring</em> specific rules for their presentation.</dd>
+
+				<dt>Declaration / Rule</dt>
+				<dd>A <em>property</em> / <em>value</em> pair that defines the style for one aspect of the selected element. E.g. <code>padding: 2rem</code>, where <em>padding</em> is the property and <em>2rem</em> is the value.</dd>
+
+				<dt>Declaration Block</dt>
+				<dd>A chunk of CSS that includes one or more <em>selectors</em> associated with one or more <em>rules</em> (property / value pairs).</dd>
+
+				<dt>Property</dt>
+				<dd>Identifies which feature a CSS declaration will affect. A property is paired with a valid <em>value</em> to declare that a specific style should be used. Together, the property / value pair are called a <em>rule</em> or <em>declaration</em>. Examples of properties might include <code>color</code>, <code>font-size</code>, or <code>margin</code>.</dd>
+
+				<dt>Selector</dt>
+				<dd>Indicates the particular HTML content to be styled by a given CSS <em>declaration block</em>. Can a be a type of element, a class or ID, or various other more complex methods of identifying particular HTML.</dd>
+
+				<dt>Stylesheet</dt>
+				<dd>Another word for the CSS file associated with a web page.</dd>
+
+				<dt>Value</dt>
+				<dd>The specified setting for a given CSS <em>property</em> in a <em>declaration</em>. Each property has its own set of associated valid values. Depending on the property, a value might be numeric (<code>400</code>), a measurement (<code>5px</code>), a color (<code>#efefef</code>), a keyword (<code>italic</code>), etcetera.</dd>
+
+			</dl>
+                 
+		</article>
+		
+	</main>
+	
+	<site-footer> 
+        <p>&copy; 2020 <a href="https://www.melissacabral.com/">Roy gaming </a></p>
+
+    </site-footer>
+	
+	</div>
+	<script src="dependencies/compressed.js"></script>
+	<script src="dependencies/xml.js"></script>
+	<script src="dependencies/css.js"></script>
+	<script src="dependencies/htmlmixed.js"></script>
+	<script src="js/scripts-dist.js"></script>
+</body>
+</html>
